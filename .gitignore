@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/
+
+# Virtual environment
+.venv/
+env/
+
+# Data files (IMPORTANT)
+*.xlsx
+*.csv
+*.tsv

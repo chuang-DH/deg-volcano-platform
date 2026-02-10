@@ -18,11 +18,32 @@ volcano.py # volcano plot + gene classification
 app.py # Streamlit UI
 
 
-📌 Notes
 
-Large data files (e.g. count tables) are ignored via .gitignore
 
-This project is for educational and research use
+## License
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 License.
+
+Commercial use is not permitted without explicit permission from the author.
+
+
+
+##streamlit test 
+https://deg-volcano-platform-6htpr5ugnf8ygqcwarfbe2.streamlit.app/
+
+##test step 
+-1. Upload raw count matrix (Excel) 3x control and 3x treatment 
+-2. select sample column (select Control samples 3x and treatment samples 3x)
+-3. check Use adjusted p-value(FDR, padj)  
+-4. Adjust stick settings of Significance threshold(0.05) and log2FC threshold(1)
+-5. Run Deseq2 analysis(around 1m30s. depend on data size)
+-6. output volcano plot and calculated column 
+
+
+
+#note: 
+
+-1. Test status shows “Too low / Not tested” because the PyDESeq2 model automatically filters out low-count genes to avoid influencing FDR estimation.
+-2. log2FC threshold(1) contain 1 and -1
 
 
 
